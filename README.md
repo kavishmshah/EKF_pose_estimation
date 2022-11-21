@@ -1,8 +1,7 @@
-# CSCI5552 Homework 3 (Spring 2022)
-## Description
-In this homework, you will implement an extended Kalman Filter (EKF).
-Your robot will receive different kinds of measurements from 25 known landmarks.
-You will be asked to submit a screenshot of your results and your controller source code for this homework assignment.
+# EKF_pose_estimation
+Pose Estimation using an EKF to fuse wheel odometry and camera based pose estimation.
+
+In this project, I am using Webots simulator for robot pose estimation. The robot has wheel encoders which provides wheel odomtery and a monocular camera which for pose estimation based on known landmarks in the environment with known global poses with respect to the world origin. Both these pose estimates are noisy (Gaussian noise). The pose estimation information from these sensors are fused using an  EKF in order to provide a robust robot localization.
 ![VE overview](teaser.png "VE overview")
 
 Pose estimation visualization
